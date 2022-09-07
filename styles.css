@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+img {
+    margin-top: 10px;
+}
+
+header,
+main,
+footer,
+.container {
+    display: flex;
+}
+
+header {
+ gap: 2em; 
+ justify-content: space-between;  
+}
+
+p#remaining-cards {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+main {
+    flex-direction: column;
+}
+
+footer {
+    flex-direction: column;
+}
+
+.container {
+    background-color: #008000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+div#cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+div.card-slot {
+    width: calc(120px * 5 / 7);
+    height: 120px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+img.images {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.7em 3em;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #eeef20;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #80b918;
+    color: #fff;
+}
+
+button#new-deck{
+    align-self: flex-start;
+}
+
+button#draw-cards:disabled {
+    background-color: grey;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+button#draw-cards:disabled:hover,
+button#draw-cards:disabled:focus {
+    background-color: grey;
+}
